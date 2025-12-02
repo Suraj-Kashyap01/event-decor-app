@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-brandBlue bg-blue-200  font-brand py-8 mt-10">
+    <footer className="bg-brandBlue bg-blue-100  font-brand py-8 mt-10">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-6">
 
         {/* Company Info */}

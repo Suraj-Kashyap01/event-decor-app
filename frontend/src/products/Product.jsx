@@ -7,7 +7,7 @@ const Products = () => {
 
   // Backend se fetch karna
   useEffect(() => {
-    fetch("http://localhost:3000/products") // backend URL
+    fetch("https://event-decor-app.onrender.com/products") // backend URL
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));

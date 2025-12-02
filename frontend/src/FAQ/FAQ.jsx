@@ -32,7 +32,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto mt-10">
+    <div className="max-w-2xl mx-auto mt-10 ">
       <h2 className="text-2xl font-bold mb-4 text-center text-brandBlue">Frequently Asked Questions</h2>
       {faqs.map((faq, index) => (
         <div key={index} className="border-b py-3 cursor-pointer" onClick={() => toggleFAQ(index)}>
