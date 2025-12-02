@@ -5,7 +5,6 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-
 // app.use(cors());
 // app.use(cors({
 //   origin: "https://eventdecor.vercel.app/"  // frontend ka URL
@@ -13,7 +12,8 @@ app.use(express.json());
 
 const allowedOrigins = [
   'http://localhost:5173', // dev
-  'https://eventdecor.vercel.app' // production
+  'https://eventdecor.vercel.app',
+  'https://eventdecor.vercel.app/'
 ];
 
 app.use(cors({
