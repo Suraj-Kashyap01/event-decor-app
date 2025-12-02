@@ -8,7 +8,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: "http://localhost:5173"  // frontend ka URL
+  origin: "https://eventdecor.vercel.app/"  // frontend ka URL
 }));
 
 // data
