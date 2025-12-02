@@ -1,15 +1,34 @@
 import express from 'express';
 const app = express();
 import cors from "cors";
-
-app.use(cors());
-app.use(express.json());
-
 const PORT = process.env.PORT || 3000;
 
+app.use(express.json());
+
+
+// app.use(cors());
+// app.use(cors({
+//   origin: "https://eventdecor.vercel.app/"  // frontend ka URL
+// }));
+
+const allowedOrigins = [
+  'http://localhost:5173', // dev
+  'https://eventdecor.vercel.app' // production
+];
+
 app.use(cors({
-  origin: "https://eventdecor.vercel.app/"  // frontend ka URL
+  origin: function(origin, callback) {
+    if(!origin) return callback(null, true); // server-to-server request
+    if(allowedOrigins.indexOf(origin) === -1) {
+      return callback(new Error('CORS not allowed'), false);
+    }
+    return callback(null, true);
+  }
 }));
+
+app.use(express.json());
+
+
 
 // data
 const products = [
