@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+console.log("Products page loaded");
 
   // Backend se fetch karna
   useEffect(() => {
