@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-brandBlue  font-brand py-8 mt-10">
+    <footer className="bg-brandBlue bg-blue-200  font-brand py-8 mt-10">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-6">
 
         {/* Company Info */}
@@ -34,9 +34,10 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-2">Follow Us</h3>
           <div className="flex gap-3">
-            <span className="cursor-pointer hover:text-brandOrange">FB</span>
-            <span className="cursor-pointer hover:text-brandOrange">TW</span>
-            <span className="cursor-pointer hover:text-brandOrange">IG</span>
+            <span className="cursor-pointer hover:text-brandOrange">Facebook</span>
+            <span className="cursor-pointer hover:text-brandOrange">Twitter</span>
+            <span className="cursor-pointer hover:text-brandOrange">Instagram</span>
+            
           </div>
         </div>
 
